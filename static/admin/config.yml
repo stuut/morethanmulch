@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: stuut/netlify-cms-tutorial
+  repo: stuut/morethanmulch
 
 media_folder: static/img
 public_folder: /img
