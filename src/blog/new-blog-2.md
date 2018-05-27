@@ -7,6 +7,6 @@ tags:
 author: Kyle Mathews
 category:
   - harden
-mainImage: /static/img/golf3.jpg
+mainImage: /img/golf3.jpg
 ---
 here is some body copy
