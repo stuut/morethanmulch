@@ -7,6 +7,6 @@ tags:
 author: Kyle Mathews
 category:
   - boorowa
-mainImage: /img/golf3.jpg
+mainImage: /static/img/golf3.jpg
 ---
 here is some body copy
