@@ -1,12 +1,12 @@
 ---
 date: '2018-05-27'
-title: new blog
+title: boorowa
 tags:
   - harden
   - ''
 author: Kyle Mathews
 category:
-  - harden
+  - boorowa
 mainImage: img/golf3.jpg
 ---
 here is some body copy

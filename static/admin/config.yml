@@ -2,8 +2,7 @@ backend:
   name: github
   repo: stuut/morethanmulch
 
-media_folder: static/
-public_folder: /img
+media_folder: static/img
 
 collections:
   - name: blog
