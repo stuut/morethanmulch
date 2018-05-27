@@ -3,6 +3,7 @@ backend:
   repo: stuut/morethanmulch
 
 media_folder: static/img
+public_folder: /img
 
 collections:
   - name: blog
