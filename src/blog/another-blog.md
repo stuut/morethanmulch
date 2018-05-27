@@ -6,6 +6,6 @@ tags:
 author: Kyle Mathews
 category:
   - young
-mainImage: /img/golf3.jpg
+mainImage: /img/golf.jpg
 ---
 here is some body copy
