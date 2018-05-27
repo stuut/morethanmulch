@@ -2,7 +2,7 @@ backend:
   name: github
   repo: stuut/morethanmulch
 
-media_folder: static/img
+media_folder: static/
 public_folder: /img
 
 collections:
@@ -11,7 +11,10 @@ collections:
     folder: src/blog
     create: true
     fields:
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {  label: Date, name: date,widget: date }
+      - {  label: Title, name: title,}
+      - {  label: Body, name: body, widget: markdown }
+      - { label: Tags, name: tags, widget: list}
+      - { label: author, name: author, }
+      - { label: category, name: category, }
+      - { label: mainImage, name: mainImage, widget: image}
