@@ -2,7 +2,10 @@
 date: '2018-05-27'
 title: new blog
 tags:
-  - tags
+  - harden
   - ''
+author: Kyle Mathews
+category: harden
+mainImage: /img/golf3.jpg
 ---
-title
+here is some body copy
