@@ -15,5 +15,5 @@ collections:
       - {  label: Body, name: body, widget: markdown }
       - { label: Tags, name: tags, widget: list}
       - { label: author, name: author, }
-      - { label: category, name: category, }
+      - { label: category, name: category, widget: list}
       - { label: mainImage, name: mainImage, widget: image}
