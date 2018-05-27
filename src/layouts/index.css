@@ -1,0 +1,205 @@
+html{
+  margin:0;
+}
+body{
+  background: #eeeeee;
+  margin:0;
+}
+
+a{
+  transition:all .25s ease-in-out;
+  -webkit-transition:all .25s ease-in-out;
+  -moz-transition:all .25s ease-in-out;
+}
+
+a:hover{
+  color:#8fc744;
+}
+.sub-menu a{
+  color:#333;
+}
+.card a:hover{
+   color:#8fc744;
+}
+
+.header{
+  position:relative;
+  width:100%;
+  padding-top:1rem;
+  background-color:#ffffff;
+  box-shadow: 0 0 25px 0 rgba(0,0,0,.1);
+
+}
+.sub-menu{
+  padding: .5rem;
+  text-align: center;
+}
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: -55px;
+  width: 100%;
+  display:block;
+  padding:15px;
+  transition: top 0.5s;
+  z-index:1000;
+}
+.logo{
+  margin: 0 auto .2rem auto;
+  display:block;
+}
+.row{
+  display:flex;
+  flex-direction:row;
+  align-items:stretch;
+  flex-wrap: wrap;
+}
+.row > .card{
+  width:25%;
+  padding:1%;
+  display: flex;
+}
+@media screen and (max-width:990px){
+  .row > .card{
+    width:33.333%;
+  }
+}
+@media screen and (max-width:768px){
+  .row > .card{
+    width:50%;
+  }
+}
+@media screen and (max-width:480px){
+  .row > .card{
+    width:100%;
+  }
+}
+.postCard,
+.card > div{
+  -webkit-transition: -webkit-box-shadow .1s ease;
+  -o-transition: box-shadow .1s ease;
+  transition: box-shadow .1s ease;
+  transition: box-shadow .1s ease,-webkit-box-shadow .1s ease;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-box-shadow: 0 0 25px 0 rgba(0,0,0,.1);
+  box-shadow: 0 0 25px 0 rgba(0,0,0,.1);
+  background-color:#ffffff;
+}
+
+
+.card > div:hover{
+-webkit-transition: -webkit-box-shadow .1s ease;
+    -o-transition: box-shadow .1s ease;
+    transition: box-shadow .1s ease;
+    transition: box-shadow .1s ease,-webkit-box-shadow .1s ease;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-box-shadow: 0 0 25px 0 rgba(0,0,0,.3);
+    box-shadow: 0 0 25px 0 rgba(0,0,0,.3);
+  }
+
+.postText{
+  padding:2%;
+}
+@media screen and (min-width:768px){
+ .menu-container{
+   display:none;
+ }
+}
+@media screen and (max-width:768px){
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  left: 20px;
+  top: 20px;
+}
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+.bm-overlay,
+.bm-menu-wrap{
+  left:0px;
+  top:0px;
+}
+}
+.loadMore{
+  display: block;
+  padding: 10px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, .1), 0px 2px 2px 0px rgba(0, 0, 0, .01), 0px 3px 1px -2px rgba(0, 0, 0, .01);
+  margin: 0 auto;
+  line-height: 78px;
+  text-align: center;
+  cursor:pointer;
+  transition:all .25s ease-in-out;
+}
+.loadMore:hover{
+  box-shadow: 0px 1px 5px 0px rgba(255, 255, 255, .1), 0px 2px 2px 0px rgba(255, 255, 255, .01), 0px 3px 1px -2px rgba(255, 255, 255, .01);
+  background-color:#8fc744;
+  color:#ffffff;
+}
+
+.authorTab{
+  display:flex;
+}
+
+.tab{
+    padding: 2px 5px 2px 5px;
+    background-color: #666666;
+    display: inline-flex;
+    color: #ffffff;
+    margin-right: 5px;
+    font-size:.7rem;
+}
+
+.tab:hover{
+  background-color: #8fc744;
+}
+
+.tab a{
+  color: #ffffff;
+}
+
+.tab a:hover{
+  color: #ffffff;
+}
+
+.card h3,
+.card h3 a{
+  color:#333;
+}
