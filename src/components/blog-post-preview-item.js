@@ -11,7 +11,7 @@ class BlogPostPreviewItem extends React.Component {
     return (
       <article className="card" css={{ position: `relative` }}>
        <div>
-          <Img resolutions={post.frontmatter.mainImage.childImageSharp.resolutions} style={{ width: '100%', paddingBottom:'66.6667%',}}/>
+          <img src={post.frontmatter.mainImage} style={{ width: '100%', paddingBottom:'66.6667%',}}/>
           <div className="postText">
             <Link to={`/category/${_.kebabCase(post.frontmatter.category)}`}><div className="tab">{post.frontmatter.category}</div></Link>
             <h3 style={{
@@ -82,15 +82,7 @@ export const blogPostPreviewFragment = graphql`
       date(formatString: "MMMM Do YYYY")
       category
       tags
-      mainImage {
-        childImageSharp {
-          resolutions(width: 300) {
-            src
-            srcSet
-            base64
-          }
-        }
-      }
+      mainImage
       author {
         id
         fields {

@@ -16,7 +16,7 @@ class BlogPostTemplate extends React.Component {
       <div>
       <div className="postCard">
         <div>
-      <Img sizes={post.frontmatter.mainImage.childImageSharp.sizes} className={className} style={{ width: '100%'}}/>
+      <img src={post.frontmatter.mainImage} className={className} style={{ width: '100%'}}/>
       <TagsSection tags={this.props.data.markdownRemark.frontmatter.tags} />
       <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <h1>{post.frontmatter.title}</h1>
@@ -75,7 +75,7 @@ class BlogPostTemplate extends React.Component {
 
         </div>
 
-      
+
           </div>
         </div>
       </div>
@@ -102,13 +102,7 @@ export const pageQuery = graphql`
         tags
         category
         date(formatString: "MMMM DD, YYYY")
-        mainImage {
-          childImageSharp {
-            sizes(maxWidth: 1200 ) {
-              ...GatsbyImageSharpSizes
-            }
-          }
-        }
+        mainImage
         author {
           id
           bio

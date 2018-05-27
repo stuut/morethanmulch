@@ -53,13 +53,7 @@ export const postsQuery = graphql`
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
-            mainImage {
-              childImageSharp {
-                sizes(maxWidth: 768) {
-                  ...GatsbyImageSharpSizes
-                }
-              }
-            }
+            mainImage
           }
         }
       }

@@ -16,7 +16,7 @@ export default ({ data }) => {
           {data.harden.edges.map(({ node }) => (
             <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
               <div key={node.id}>
-              <Img sizes={node.frontmatter.mainImage.childImageSharp.sizes}/>
+              <img src={node.frontmatter.mainImage}/>
                 <h3>
                   {node.frontmatter.title}{" "}
                   <p>{node.frontmatter.date}</p>
@@ -32,7 +32,7 @@ export default ({ data }) => {
         {data.young.edges.map(({ node }) => (
           <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
             <div key={node.id}>
-            <Img sizes={node.frontmatter.mainImage.childImageSharp.sizes}/>
+            <img src={node.frontmatter.mainImage}/>
               <h3>
                 {node.frontmatter.title}{" "}
                 <p>{node.frontmatter.date}</p>
@@ -47,7 +47,7 @@ export default ({ data }) => {
         {data.boorowa.edges.map(({ node }) => (
           <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
             <div key={node.id}>
-            <Img sizes={node.frontmatter.mainImage.childImageSharp.sizes}/>
+            <img src={node.frontmatter.mainImage}/>
               <h3>
                 {node.frontmatter.title}{" "}
                 <p>{node.frontmatter.date}</p>
@@ -86,13 +86,7 @@ export const pageQuery = graphql`
                 date(formatString: "DD MMMM, YYYY")
                 title
                 category
-                mainImage {
-                  childImageSharp {
-                    sizes(maxWidth: 768,) {
-                      ...GatsbyImageSharpSizes
-                    }
-                  }
-                }
+                mainImage
               }
 
             }
@@ -113,13 +107,7 @@ export const pageQuery = graphql`
                   date(formatString: "DD MMMM, YYYY")
                   title
                   category
-                  mainImage {
-                    childImageSharp {
-                      sizes(maxWidth: 768, ) {
-                        ...GatsbyImageSharpSizes
-                      }
-                    }
-                  }
+                  mainImage
                  }
 
               }
@@ -140,13 +128,7 @@ export const pageQuery = graphql`
                       date(formatString: "DD MMMM, YYYY")
                       title
                       category
-                      mainImage {
-                        childImageSharp {
-                          sizes(maxWidth: 768,) {
-                            ...GatsbyImageSharpSizes
-                          }
-                        }
-                      }
+                      mainImage
                      }
 
                   }

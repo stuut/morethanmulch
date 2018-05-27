@@ -71,7 +71,7 @@ class categoryRoute extends React.Component {
                   <div className="card" >
                     <div key={node.fields.slug}>
                       <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                      <Img resolutions={node.frontmatter.mainImage.childImageSharp.resolutions} style={{ width: '100%', paddingBottom:'66.6667%',}}/>
+                      <img src={node.frontmatter.mainImage} style={{ width: '100%'}}/>
                       </Link>
                       <TagsSection tags={node.frontmatter.tags} />
                       <div className="postText">
@@ -141,16 +141,7 @@ export const categoryPageQuery = graphql`
           frontmatter {
             title
             tags
-            mainImage {
-              childImageSharp {
-                resolutions(width: 300 quality: 70) {
-                  src
-                  srcSet
-                  base64
-
-                }
-              }
-            }
+            mainImage
           }
         }
       }
